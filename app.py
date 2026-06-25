@@ -13,7 +13,8 @@ while True:
         case 2:
             pass
         case 3:
-            pass
+            radius=float(input("Enter the radius of the circle "))
+            print(" The area of the circle is ",radius*2*3.14) 
         case 4:
             pass
         case 5:
