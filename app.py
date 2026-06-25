@@ -28,14 +28,14 @@ while True:
             Data_calculator[2] = float(Data_calculator[2])
             match Data_calculator[0]:
                 case "+":
-                    print(f"{Data_calculator[1]} + {Data_calculator[2]} = {Data_calculator[1] + Data_calculator[1]}")
+                    print(f"{Data_calculator[1]} + {Data_calculator[2]} = {Data_calculator[1] + Data_calculator[2]}")
                 case "-":
-                    print(f"{Data_calculator[1]} - {Data_calculator[2]} = {Data_calculator[1] - Data_calculator[1]}")
+                    print(f"{Data_calculator[1]} - {Data_calculator[2]} = {Data_calculator[1] - Data_calculator[2]}")
                 case "*":
-                    print(f"{Data_calculator[1]} * {Data_calculator[2]} = {Data_calculator[1] * Data_calculator[1]}")
+                    print(f"{Data_calculator[1]} * {Data_calculator[2]} = {Data_calculator[1] * Data_calculator[2]}")
                 case "/":
                     if Data_calculator[2] != 0:
-                        print(f"{Data_calculator[1]} / {Data_calculator[2]} = {Data_calculator[1] / Data_calculator[1]}")
+                        print(f"{Data_calculator[1]} / {Data_calculator[2]} = {Data_calculator[1] / Data_calculator[2]}")
                     else:
                         print("Illegal division operation")
                 case _:
