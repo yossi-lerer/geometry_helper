@@ -21,7 +21,16 @@ while True:
             radius=float(input("Enter the radius of the circle "))
             print(" The area of the circle is ",radius*2*3.14) 
         case 4:
-            pass
+            user_input=(input("Enter 3 numbers to check the validity of the Pythagorean theorem between them.(put space between each num) "))
+            user_input=user_input.split(" ")
+            user_input[0]=float(user_input[0])
+            user_input[1]=float(user_input[1])
+            user_input[2]=float(user_input[2])
+            user_input=sorted(user_input)
+            if user_input[0]*user_input[0]+user_input[1]*user_input[1]==user_input[2]*user_input[2]:
+                print("The sentence is Pythagoras")
+            else:
+                print("The sentence is not Pythagoras")
         case 5:
             Data_calculator = input("For a calculation operation, enter an operation to calculate and two digits to perform the calculation. Use a space to separate the data. ")
             Data_calculator = Data_calculator.split(" ")
@@ -29,14 +38,14 @@ while True:
             Data_calculator[2] = float(Data_calculator[2])
             match Data_calculator[0]:
                 case "+":
-                    print(f"{Data_calculator[1]} + {Data_calculator[2]} = {Data_calculator[1] + Data_calculator[1]}")
+                    print(f"{Data_calculator[1]} + {Data_calculator[2]} = {Data_calculator[1] + Data_calculator[2]}")
                 case "-":
-                    print(f"{Data_calculator[1]} - {Data_calculator[2]} = {Data_calculator[1] - Data_calculator[1]}")
+                    print(f"{Data_calculator[1]} - {Data_calculator[2]} = {Data_calculator[1] - Data_calculator[2]}")
                 case "*":
-                    print(f"{Data_calculator[1]} * {Data_calculator[2]} = {Data_calculator[1] * Data_calculator[1]}")
+                    print(f"{Data_calculator[1]} * {Data_calculator[2]} = {Data_calculator[1] * Data_calculator[2]}")
                 case "/":
                     if Data_calculator[2] != 0:
-                        print(f"{Data_calculator[1]} / {Data_calculator[2]} = {Data_calculator[1] / Data_calculator[1]}")
+                        print(f"{Data_calculator[1]} / {Data_calculator[2]} = {Data_calculator[1] / Data_calculator[2]}")
                     else:
                         print("Illegal division operation")
                 case _:
