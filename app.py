@@ -3,7 +3,7 @@ while True:
     menu_input = int(input("enter your choose "))
     match menu_input:
         case 6:
-            print("good buy!")
+            print("good bye!")
             break
         case 1:
             Data_triangle = input("To calculate the area of a triangle, enter the base of the triangle and the height of the triangle. Enter the data with one space between them. ")
