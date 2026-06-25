@@ -4,7 +4,11 @@ while True:
         case 6:
             break
         case 1:
-            pass
+            Data_triangle = input("To calculate the area of a triangle, enter the base of the triangle and the height of the triangle. Enter the data with one space between them. ")
+            Data_triangle = Data_triangle.split(" ")
+            Data_triangle[0] = float(Data_triangle[0])
+            Data_triangle[1] = float(Data_triangle[1])
+            print(f"The area of the triangle is {Data_triangle[0] * Data_triangle[1] / 2}")
         case 2:
             pass
         case 3:
