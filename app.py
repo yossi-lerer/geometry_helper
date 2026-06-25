@@ -22,23 +22,6 @@ while True:
         case 4:
             pass
         case 5:
-            Data_calculator = input("For a calculation operation, enter an operation to calculate and two digits to perform the calculation. Use a space to separate the data. ")
-            Data_calculator = Data_calculator.split(" ")
-            Data_calculator[1] = float(Data_calculator[1])
-            Data_calculator[2] = float(Data_calculator[2])
-            match Data_calculator[0]:
-                case "+":
-                    print(f"{Data_calculator[1]} + {Data_calculator[2]} = {Data_calculator[1] + Data_calculator[1]}")
-                case "-":
-                    print(f"{Data_calculator[1]} - {Data_calculator[2]} = {Data_calculator[1] - Data_calculator[1]}")
-                case "*":
-                    print(f"{Data_calculator[1]} * {Data_calculator[2]} = {Data_calculator[1] * Data_calculator[1]}")
-                case "/":
-                    if Data_calculator[2] != 0:
-                        print(f"{Data_calculator[1]} / {Data_calculator[2]} = {Data_calculator[1] / Data_calculator[1]}")
-                    else:
-                        print("Illegal division operation")
-                case _:
-                    print("Illegal calculate operation")
+            pass
         case _:
             pass
