@@ -11,7 +11,11 @@ while True:
             Data_triangle[1] = float(Data_triangle[1])
             print(f"The area of the triangle is {Data_triangle[0] * Data_triangle[1] / 2}")
         case 2:
-            pass
+            Data_square = input("To calculate the area of a square, enter the base of the square and the height of the square. Enter the data with one space between them. ")
+            Data_square = Data_square.split(" ")
+            Data_square[0] = float(Data_square[0])
+            Data_square[1] = float(Data_square[1])
+            print(f"The area of the square is {Data_square[0] * Data_square[1]}")
         case 3:
             radius=float(input("Enter the radius of the circle "))
             print(" The area of the circle is ",radius*2*3.14) 
