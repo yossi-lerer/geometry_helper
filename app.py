@@ -17,7 +17,8 @@ while True:
             Data_square[1] = float(Data_square[1])
             print(f"The area of the square is {Data_square[0] * Data_square[1]}")
         case 3:
-            pass
+            radius=float(input("Enter the radius of the circle "))
+            print(" The area of the circle is ",radius*2*3.14) 
         case 4:
             pass
         case 5:
